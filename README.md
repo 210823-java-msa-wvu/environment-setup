@@ -13,7 +13,7 @@ The following technologies are required in order to complete this phase of the p
 
 - **Git**: We'll be using Git as a version control tool during the course of this program. Not only will you use Git to track changes to your projects, but you'll also use it to collaborate with your trainer and with your fellow associates.
 - **Java SE Development Kit 8**: We will be utilizing Java 8 as our primary language for the duration of the program. This software development kit will provide the compiler and runtime environment needed to quickly and efficiently develop Java applications.
-- **Spring Tool Suite 4.8.1**: We will be using Spring Tool Suite 4 as our *integrated development environment* (IDE). Though you don't need an IDE to write code, an IDE provides several features that make rapid development (e.g. quickly writing and refactoring code) easier. We will be downloading 4.8.1 as some design changes in the underlying Eclipse IDE would require us to install multiple plug-ins if we were using the most current version. 
+- **IntelliJ IDEA Community Edition**: We will be using IntelliJ as our *integrated development environment* (IDE). Though you don't need an IDE to write code, an IDE provides several features that make rapid development (e.g. quickly writing and refactoring code) easier. IntelliJ is an IDE managed by a company called JetBrains. If you've worked in Python before, you may know them, as they also have an IDE called PyCharm.  
 - **Apache Maven**: Maven is a software project management and build automation tool. We will use it to manage our projects' builds as it provides dependency management and streamlines several aspects of the testing life cycle.
 - **DBeaver**: DBeaver is a free, open source universal database tool that is compatible with several external data sources. We'll use DBeaver in order to modify our databases (which will be hosted on AWS) and persist data using a simple user interface provided to us by the tool.
 - **Apache Tomcat 9**: During this program, we will explore web development. As a result, we'll need a runtime environment for our web applications. Apache Tomcat provides a web server environment in which we can run our Java code so that we can easily and quickly deploy our web applications.
@@ -30,7 +30,7 @@ There are two provided methods of attaining and configuring all of the necessary
 
 Neither method is more "correct" than the other. You should choose the method of attaining the tools that works best for you. You may even choose to mix both methods, downloading some tools manually and others via a package manager.
 
-**NOTE**: This guide primarily is written for those on a Windows Machine. For Mac users [this guide](https://github.com/210614-JavaFS/mac-setup) may be more helpful. 
+**NOTE**: This guide primarily is written for those on a Windows Machine. For Mac users [this guide](https://github.com/210823-java-msa-wvu/mac-setup) may be more helpful. 
 
 ## Method 1: Installation Guide Using A Package Manager
 
@@ -86,9 +86,9 @@ Now verify that you have installed Java properly by typing this command:
 
      java -version
 
-### Step 4: Install Spring Tool Suite 4
+### Step 4: Install IntelliJ
 
-Skip down the manual install Step 3 for installing the correct version of STS4. By default Scoop will install the latest version of STS which we do not want. 
+Skip down the manual install Step 3 for installation. 
 
 ### Step 5: Install Maven
 
@@ -317,34 +317,12 @@ You should see your operating system listed ("Windows 10" in the above example) 
 
 ![](./images/JDK-Version.jpg)
 
-### Step 3: Install Spring Tool Suite 4
+### Step 3: Install IntelliJ IDEA
 
-1. Navigate to the [Spring Tools Github Wiki Previous Versions](https://github.com/spring-projects/sts4/wiki/Previous-Versions) page and scroll down to Spring Tools 4.8.1. Then download the first option, the self-extracting jar. 
+1. Navigate to the [JetBrains Installation Guide](https://www.jetbrains.com/help/idea/installation-guide.html) page and install IntelliJ using the Toolbox App. The latest stable release is fine for our purposes (2021.2) The community edition is free, you do not need Ultimate! Follow the installation wizard's steps. 
 
-![](./images/STS-OldVersion.jpg)
+![](./images/intellij-start.png)
 
-2. Once the download has finished go to your downloads folder, search for the spring-tool-suite jar file and double click it to begin the install process. NOTE: STS will install to the directory the jar file is in when you open it. If you would like STS to install to another directory than your downloads directory, move the jar file before opening it.
-
-![](./images/STS-Jar.jpg)
-
-3. An unnamed progress bar will appear as STS is installed into your directory. 
-
-![](./images/STS-Unpack.jpg)
-
-4. Once the install is complete you will have an STS folder in the directory. Double click it to enter it. 
-
-![](./images/STS-Folder.jpg)
-
-5. Once inside the folder double click the SpringToolSuite4 application icon to start STS and ensure it runs correctly. If you encounter any errors check all the path variables you configured in the previous setup guides. 
-
-![](./images/STS-Ready.jpg)
-
-6. If STS opens without errors you will be asked to create a workspace. You can just click "Cancel" at this time. 
-
-7. If you would like to place a shortcut to STS on your desktop (which is highly recommended) you can right-click the SpringToolSuite4 application, hover over "Send to" and click "Desktop (create shortcut)". You will now have a desktop icon from which you can open STS.
-
-![](./images/STS-Shortcut.jpg)
-![](./images/STS-Desktop.jpg)
 
 ### Step 4: Install Apache Maven
 
